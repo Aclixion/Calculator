@@ -12,3 +12,15 @@
 .controls {
     display: flex;
 }
+
+.numbers, .operators {
+    display: grid;
+}
+
+.numbers {
+    grid-template-columns: repeat(3, 30px);
+}
+
+.operators {
+    grid-template-columns: repeat(2, 30px);
+}
