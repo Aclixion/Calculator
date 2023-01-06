@@ -28,41 +28,51 @@ let solution = null;
 let currentNumber = "";
 
 oneBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "1";
+    currentNumber += "1";
+    answerDisplay.textContent = currentNumber;
 });
 
 twoBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "2";
+    currentNumber += "2";
+    answerDisplay.textContent = currentNumber;
 });
 
 threeBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "3";
+    currentNumber += "3";
+    answerDisplay.textContent = currentNumber;
 });
 
 fourBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "4";
+    currentNumber += "4";
+    answerDisplay.textContent = currentNumber;
 });
 
 fiveBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "5";
+    currentNumber += "5";
+    answerDisplay.textContent = currentNumber;
 });
 
 sixBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "6";
+    currentNumber += "6";
+    answerDisplay.textContent = currentNumber;
 });
 
 sevenBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "7";
+    currentNumber += "7";
+    answerDisplay.textContent = currentNumber;
 });
 
 eightBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "8";
+    currentNumber += "8";
+    answerDisplay.textContent = currentNumber;
 });
 
 nineBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "9";
+    currentNumber += "9";
+    answerDisplay.textContent = currentNumber;
 });
 
 zeroBtn.addEventListener("click", () => {
-    answerDisplay.textContent += "0";
+    currentNumber += "0";
+    answerDisplay.textContent = currentNumber;
 });
