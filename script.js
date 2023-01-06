@@ -109,3 +109,19 @@ multiplyBtn.addEventListener("click", () => {
     answerDisplay.textContent = solution;
     currentNumber = "";
 });
+
+divideBtn.addEventListener("click", () => {
+    if (currentNumber === "0") {
+        alert("YOU CANT DIVIDE BY ZERO");
+    } else {
+        if (solution === null) {
+            solution = Number(currentNumber);
+        } else {
+            solution /= Number(currentNumber);
+        }
+    
+        answerDisplay.textContent = solution;
+    }
+
+    currentNumber = "";
+})
