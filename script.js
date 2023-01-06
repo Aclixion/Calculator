@@ -32,6 +32,11 @@ function updateDisplay(numberString) {
     answerDisplay.textContent = numberString;
 }
 
+// Adds a digit to current number
+function addDigitToCurrent(numberString) {
+    currentNumber += number;
+}
+
 oneBtn.addEventListener("click", () => {
     currentNumber += "1";
     answerDisplay.textContent = currentNumber;
