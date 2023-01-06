@@ -20,3 +20,6 @@ const clearBtn = document.querySelector(".clear");
 
 // Answer display
 const answerDisplay = document.querySelector(".answer-display");
+
+// Solution for current expression
+let solution = null;
