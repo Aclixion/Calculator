@@ -18,9 +18,16 @@
 }
 
 .numbers {
-    grid-template-columns: repeat(3, 30px);
+    grid-template-columns: repeat(3, auto);
 }
 
 .operators {
-    grid-template-columns: repeat(2, 30px);
+    grid-template-columns: repeat(2, auto);
+}
+
+.number-btn, .operator-btn {
+    font-size: 40px;
+    padding: 0 10px;
+    border: none;
+    background-color: #5b5b5b;
 }
