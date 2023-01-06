@@ -11,10 +11,12 @@
 
 .controls {
     display: flex;
+    gap: 0px 20px;
 }
 
 .numbers, .operators {
     display: grid;
+    gap: 5px;
 }
 
 .numbers {
