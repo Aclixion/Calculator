@@ -24,6 +24,9 @@ const answerDisplay = document.querySelector(".answer-display");
 // Solution for current expression
 let solution = null;
 
+// Current number being entered
+let currentNumber = "";
+
 oneBtn.addEventListener("click", () => {
     answerDisplay.textContent += "1";
 });
