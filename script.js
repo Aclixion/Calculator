@@ -27,6 +27,11 @@ let solution = null;
 // Current number being entered
 let currentNumber = "";
 
+// Update number display
+function updateDisplay(numberString) {
+    answerDisplay.textContent = numberString;
+}
+
 oneBtn.addEventListener("click", () => {
     currentNumber += "1";
     answerDisplay.textContent = currentNumber;
