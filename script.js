@@ -76,3 +76,14 @@ zeroBtn.addEventListener("click", () => {
     currentNumber += "0";
     answerDisplay.textContent = currentNumber;
 });
+
+plusBtn.addEventListener("click", () => {
+    if (solution === null) {
+        solution = Number(currentNumber);
+    } else {
+        solution += Number(currentNumber);
+    }
+
+    answerDisplay.textContent = solution;
+    currentNumber = "";
+});
