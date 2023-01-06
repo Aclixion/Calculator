@@ -37,6 +37,11 @@ function addDigitToCurrent(numberString) {
     currentNumber += number;
 }
 
+// Clears current number
+function resetCurrentNumber() {
+    currentNumber = "";
+}
+
 oneBtn.addEventListener("click", () => {
     currentNumber += "1";
     answerDisplay.textContent = currentNumber;
