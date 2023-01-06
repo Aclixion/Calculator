@@ -17,3 +17,6 @@ const multiplyBtn = document.querySelector(".multiply");
 const divideBtn = document.querySelector(".divide");
 const equalsBtn = document.querySelector(".equals");
 const clearBtn = document.querySelector(".clear");
+
+// Answer display
+const answerDisplay = document.querySelector(".answer-display");
