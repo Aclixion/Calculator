@@ -87,3 +87,14 @@ plusBtn.addEventListener("click", () => {
     answerDisplay.textContent = solution;
     currentNumber = "";
 });
+
+minusBtn.addEventListener("click", () => {
+    if (solution === null) {
+        solution = Number(currentNumber);
+    } else {
+        solution -= Number(currentNumber);
+    }
+
+    answerDisplay.textContent = solution;
+    currentNumber = "";
+})
