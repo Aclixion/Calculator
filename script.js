@@ -45,7 +45,7 @@ function operate(numberOne, numberTwo, operation) {
         case "-":
             return numberOne - numberTwo;
         case "*":
-            return numberOne + numberTwo;
+            return numberOne * numberTwo;
         case "/":
             if (numberTwo === 0) {
                 alert("WARNING: CANNOT DIVIDE BY ZERO");
