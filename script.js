@@ -41,16 +41,16 @@ function resetCurrentNumber() {
 function operate(numberOne, numberTwo, operation) {
     switch (operation) {
         case "+":
-            solution = numberTwo + numberOne;
+            return numberTwo + numberOne;
         case "-":
-            solution = numberOne - numberTwo;
+            return numberOne - numberTwo;
         case "*":
-            solution = numberOne + numberTwo;
+            return numberOne + numberTwo;
         case "/":
             if (numberTwo === 0) {
                 alert("WARNING: CANNOT DIVIDE BY ZERO");
             } else {
-                solution = numberOne / numberTwo;
+                return numberOne / numberTwo;
             }
     }
 }
