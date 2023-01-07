@@ -57,53 +57,43 @@ function operate(numberOne, numberTwo, operation) {
 }
 
 oneBtn.addEventListener("click", () => {
-    currentNumber += "1";
-    answerDisplay.textContent = currentNumber;
+    addDigit("1");
 });
 
 twoBtn.addEventListener("click", () => {
-    currentNumber += "2";
-    answerDisplay.textContent = currentNumber;
+    addDigit("2");
 });
 
 threeBtn.addEventListener("click", () => {
-    currentNumber += "3";
-    answerDisplay.textContent = currentNumber;
+    addDigit("3");
 });
 
 fourBtn.addEventListener("click", () => {
-    currentNumber += "4";
-    answerDisplay.textContent = currentNumber;
+    addDigit("4");
 });
 
 fiveBtn.addEventListener("click", () => {
-    currentNumber += "5";
-    answerDisplay.textContent = currentNumber;
+    addDigit("5");
 });
 
 sixBtn.addEventListener("click", () => {
-    currentNumber += "6";
-    answerDisplay.textContent = currentNumber;
+    addDigit("6");
 });
 
 sevenBtn.addEventListener("click", () => {
-    currentNumber += "7";
-    answerDisplay.textContent = currentNumber;
+    addDigit("7");
 });
 
 eightBtn.addEventListener("click", () => {
-    currentNumber += "8";
-    answerDisplay.textContent = currentNumber;
+    addDigit("8");
 });
 
 nineBtn.addEventListener("click", () => {
-    currentNumber += "9";
-    answerDisplay.textContent = currentNumber;
+    addDigit("9");
 });
 
 zeroBtn.addEventListener("click", () => {
-    currentNumber += "0";
-    answerDisplay.textContent = currentNumber;
+    addDigit("0");
 });
 
 plusBtn.addEventListener("click", () => {
