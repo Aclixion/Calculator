@@ -28,7 +28,7 @@ let solution = null;
 let currentNumber = "";
 
 // Adds a digit to current number
-function addDigitToCurrent(numberString) {
+function addDigit(numberString) {
     currentNumber += number;
     answerDisplay.textContent = numberString;
 }
