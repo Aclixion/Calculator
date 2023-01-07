@@ -41,6 +41,24 @@ function resetCurrentNumber() {
     currentNumber = "";
 }
 
+// Performs an arithmetic operation on two numbers
+function operate(numberOne, numberTwo, operation) {
+    switch (operation) {
+        case "+":
+            return numberOne + numberTwo;
+        case "-":
+            return numberOne - numberTwo;
+        case "*":
+            return numberOne * numberTwo;
+        case "/":
+            if (numberTwo === 0) {
+                return NaN;
+            } else {
+                return numberOne / numberTwo;
+            }
+    }
+}
+
 oneBtn.addEventListener("click", () => {
     addDigit("1");
 });
