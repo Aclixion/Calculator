@@ -42,6 +42,23 @@ function resetCurrentNumber() {
     currentNumber = "";
 }
 
+function operate(numberOne, numberTwo, operation) {
+    switch (operation) {
+        case "+":
+            return numberTwo + numberOne;
+        case "-":
+            return numberOne - numberTwo;
+        case "*":
+            return numberOne + numberTwo;
+        case "/":
+            if (numberTwo === 0) {
+                alert("WARNING: CANNOT DIVIDE BY ZERO");
+            } else {
+                return numberOne / numberTwo;
+            }
+    }
+}
+
 oneBtn.addEventListener("click", () => {
     currentNumber += "1";
     answerDisplay.textContent = currentNumber;
