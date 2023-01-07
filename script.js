@@ -27,6 +27,9 @@ let solution = null;
 // Current number being entered
 let currentNumber = "";
 
+// Current selected operation
+let currentOperation;
+
 // Adds a digit to current number
 function addDigit(numberString) {
     currentNumber += numberString;
