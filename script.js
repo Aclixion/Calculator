@@ -27,14 +27,10 @@ let solution = null;
 // Current number being entered
 let currentNumber = "";
 
-// Update number display
-function updateDisplay(numberString) {
-    answerDisplay.textContent = numberString;
-}
-
 // Adds a digit to current number
 function addDigitToCurrent(numberString) {
     currentNumber += number;
+    answerDisplay.textContent = numberString;
 }
 
 // Clears current number
@@ -45,16 +41,16 @@ function resetCurrentNumber() {
 function operate(numberOne, numberTwo, operation) {
     switch (operation) {
         case "+":
-            return numberTwo + numberOne;
+            solution = numberTwo + numberOne;
         case "-":
-            return numberOne - numberTwo;
+            solution = numberOne - numberTwo;
         case "*":
-            return numberOne + numberTwo;
+            solution = numberOne + numberTwo;
         case "/":
             if (numberTwo === 0) {
                 alert("WARNING: CANNOT DIVIDE BY ZERO");
             } else {
-                return numberOne / numberTwo;
+                solution = numberOne / numberTwo;
             }
     }
 }
