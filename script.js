@@ -38,24 +38,6 @@ function resetCurrentNumber() {
     currentNumber = "";
 }
 
-function operate(numberOne, numberTwo, operation) {
-    switch (operation) {
-        case "+":
-            return numberTwo + numberOne;
-        case "-":
-            return numberOne - numberTwo;
-        case "*":
-            return numberOne * numberTwo;
-        case "/":
-            if (numberTwo === 0) {
-                alert("WARNING: CANNOT DIVIDE BY ZERO");
-                return undefined;
-            } else {
-                return numberOne / numberTwo;
-            }
-    }
-}
-
 oneBtn.addEventListener("click", () => {
     addDigit("1");
 });
@@ -95,52 +77,3 @@ nineBtn.addEventListener("click", () => {
 zeroBtn.addEventListener("click", () => {
     addDigit("0");
 });
-
-plusBtn.addEventListener("click", () => {
-    if (solution === null) {
-        solution = Number(currentNumber);
-    } else {
-        solution += Number(currentNumber);
-    }
-
-    answerDisplay.textContent = solution;
-    currentNumber = "";
-});
-
-minusBtn.addEventListener("click", () => {
-    if (solution === null) {
-        solution = Number(currentNumber);
-    } else {
-        solution -= Number(currentNumber);
-    }
-
-    answerDisplay.textContent = solution;
-    currentNumber = "";
-})
-
-multiplyBtn.addEventListener("click", () => {
-    if (solution === null) {
-        solution = Number(currentNumber);
-    } else {
-        solution *= Number(currentNumber);
-    }
-
-    answerDisplay.textContent = solution;
-    currentNumber = "";
-});
-
-divideBtn.addEventListener("click", () => {
-    if (currentNumber === "0") {
-        alert("YOU CANT DIVIDE BY ZERO");
-    } else {
-        if (solution === null) {
-            solution = Number(currentNumber);
-        } else {
-            solution /= Number(currentNumber);
-        }
-    
-        answerDisplay.textContent = solution;
-    }
-
-    currentNumber = "";
-})
