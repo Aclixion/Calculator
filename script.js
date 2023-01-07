@@ -49,6 +49,7 @@ function operate(numberOne, numberTwo, operation) {
         case "/":
             if (numberTwo === 0) {
                 alert("WARNING: CANNOT DIVIDE BY ZERO");
+                return undefined;
             } else {
                 return numberOne / numberTwo;
             }
