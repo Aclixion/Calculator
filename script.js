@@ -29,8 +29,8 @@ let currentNumber = "";
 
 // Adds a digit to current number
 function addDigit(numberString) {
-    currentNumber += number;
-    answerDisplay.textContent = numberString;
+    currentNumber += numberString;
+    answerDisplay.textContent = currentNumber;
 }
 
 // Clears current number
