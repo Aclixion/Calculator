@@ -59,6 +59,21 @@ function operate(numberOne, numberTwo, operation) {
     }
 }
 
+// Update solution to current expression
+function updateSolution() {
+    if (solution === null) {
+        solution = Number(currentNumber);
+    } else {
+        let result = operate(Number(currentNumber), Number(solution), currentOperation);
+        if (result === NaN) {
+            alert("CANNOT DIVIDE BY ZERO");
+        } else {
+            solution = result;
+            answerDisplay.textContent = solution;
+        }
+    }
+}
+
 oneBtn.addEventListener("click", () => {
     addDigit("1");
 });
