@@ -154,3 +154,11 @@ clearBtn.addEventListener("click", () => {
     currentOperation = null;
     answerDisplay.textContent = "0";
 });
+
+equalsBtn.addEventListener("click", () => {
+    if (currentNumber && currentOperation) {
+        updateSolution();
+        currentNumber = "";
+        currentOperation = null;
+    }
+});
