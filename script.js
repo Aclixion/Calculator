@@ -34,7 +34,6 @@ let currentOperation;
 // Adds a digit to current number
 function addDigit(numberString) {
     currentNumber += numberString;
-    answerDisplay.textContent = currentNumber;
 }
 
 // Clears current number
