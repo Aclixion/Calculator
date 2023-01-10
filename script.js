@@ -131,3 +131,11 @@ minusBtn.addEventListener("click", () => {
     currentNumber = "";
     currentOperation = "-";
 });
+
+multiplyBtn.addEventListener("click", () => {
+    if (currentNumber !== "") {
+        updateSolution();
+    }
+    currentNumber = "";
+    currentOperation = "*";
+});
