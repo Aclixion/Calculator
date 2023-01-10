@@ -95,42 +95,52 @@ function updateAnswerDisplay() {
 
 oneBtn.addEventListener("click", () => {
     addDigit("1");
+    displayCurrentNumber();
 });
 
 twoBtn.addEventListener("click", () => {
     addDigit("2");
+    displayCurrentNumber();
 });
 
 threeBtn.addEventListener("click", () => {
     addDigit("3");
+    displayCurrentNumber();
 });
 
 fourBtn.addEventListener("click", () => {
     addDigit("4");
+    displayCurrentNumber();
 });
 
 fiveBtn.addEventListener("click", () => {
     addDigit("5");
+    displayCurrentNumber();
 });
 
 sixBtn.addEventListener("click", () => {
     addDigit("6");
+    displayCurrentNumber();
 });
 
 sevenBtn.addEventListener("click", () => {
     addDigit("7");
+    displayCurrentNumber();
 });
 
 eightBtn.addEventListener("click", () => {
     addDigit("8");
+    displayCurrentNumber();
 });
 
 nineBtn.addEventListener("click", () => {
     addDigit("9");
+    displayCurrentNumber();
 });
 
 zeroBtn.addEventListener("click", () => {
     addDigit("0");
+    displayCurrentNumber();
 });
 
 
