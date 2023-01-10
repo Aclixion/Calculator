@@ -60,6 +60,10 @@ function operate(numberOne, numberTwo, operation) {
     }
 }
 
+function displayCurrentNumber() {
+    answerDisplay.textContent = currentNumber;
+}
+
 // Display solution on answer display
 function displaySolution() {
     if (solution === null) {
