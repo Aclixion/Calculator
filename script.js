@@ -147,3 +147,10 @@ divideBtn.addEventListener("click", () => {
     currentNumber = "";
     currentOperation = "/";
 });
+
+clearBtn.addEventListener("click", () => {
+    currentNumber = "";
+    solution = null;
+    currentOperation = null;
+    answerDisplay.textContent = "0";
+});
