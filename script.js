@@ -65,7 +65,7 @@ function updateSolution() {
         solution = Number(currentNumber);
     } else {
         let result = operate(Number(solution), Number(currentNumber), currentOperation);
-        if (result === NaN) {
+        if (isNaN(result)) {
             alert("CANNOT DIVIDE BY ZERO");
         } else {
             solution = result;
