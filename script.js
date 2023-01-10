@@ -75,6 +75,20 @@ function updateSolution() {
     }
 }
 
+// Updates answer display
+function updateAnswerDisplay() {
+    if (solution === null) {
+        answerDisplay.textContent = currentNumber;
+    } else {
+        let result = operate(Number(solution, Number(currentNumber), currentOperation));
+        if (isNaN(result)) {
+            alert("CANNOT DIVIDE BY ZERO");
+        } else {
+            answerDisplay.textContent = result;
+        }
+    }
+}
+
 oneBtn.addEventListener("click", () => {
     addDigit("1");
 });
