@@ -139,3 +139,11 @@ multiplyBtn.addEventListener("click", () => {
     currentNumber = "";
     currentOperation = "*";
 });
+
+divideBtn.addEventListener("click", () => {
+    if (currentNumber !== "") {
+        updateSolution();
+    }
+    currentNumber = "";
+    currentOperation = "/";
+});
