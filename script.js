@@ -64,7 +64,7 @@ function updateSolution() {
     if (solution === null) {
         solution = Number(currentNumber);
     } else {
-        let result = operate(Number(currentNumber), Number(solution), currentOperation);
+        let result = operate(Number(solution), Number(currentNumber), currentOperation);
         if (result === NaN) {
             alert("CANNOT DIVIDE BY ZERO");
         } else {
@@ -112,4 +112,14 @@ nineBtn.addEventListener("click", () => {
 
 zeroBtn.addEventListener("click", () => {
     addDigit("0");
+});
+
+
+
+plusBtn.addEventListener("click", () => {
+    if (currentNumber !== "") {
+        updateSolution();
+    }
+    currentNumber = "";
+    currentOperation = "+";
 });
