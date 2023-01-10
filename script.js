@@ -60,8 +60,8 @@ function operate(numberOne, numberTwo, operation) {
     }
 }
 
-// Update solution to current expression
-function updateSolution() {
+// Display solution on answer display
+function displaySolution() {
     if (solution === null) {
         solution = Number(currentNumber);
     } else {
