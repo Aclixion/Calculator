@@ -123,3 +123,11 @@ plusBtn.addEventListener("click", () => {
     currentNumber = "";
     currentOperation = "+";
 });
+
+minusBtn.addEventListener("click", () => {
+    if (currentNumber !== "") {
+        updateSolution();
+    }
+    currentNumber = "";
+    currentOperation = "-";
+});
