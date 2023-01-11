@@ -133,32 +133,36 @@ zeroBtn.addEventListener("click", () => {
 plusBtn.addEventListener("click", () => {
     if (currentNumber !== "") {
         updateSolution();
+        updateDisplay(solution);
+        resetCurrentNumber();
     }
-    currentNumber = "";
     currentOperation = "+";
 });
 
 minusBtn.addEventListener("click", () => {
     if (currentNumber !== "") {
         updateSolution();
+        updateDisplay(solution);
+        resetCurrentNumber();
     }
-    currentNumber = "";
     currentOperation = "-";
 });
 
 multiplyBtn.addEventListener("click", () => {
     if (currentNumber !== "") {
         updateSolution();
+        updateDisplay(solution);
+        resetCurrentNumber();
     }
-    currentNumber = "";
     currentOperation = "*";
 });
 
 divideBtn.addEventListener("click", () => {
     if (currentNumber !== "") {
         updateSolution();
+        updateDisplay(solution);
+        resetCurrentNumber();
     }
-    currentNumber = "";
     currentOperation = "/";
 });
 
