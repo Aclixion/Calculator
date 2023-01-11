@@ -66,52 +66,52 @@ function updateDisplay(number) {
 
 oneBtn.addEventListener("click", () => {
     addDigit("1");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 twoBtn.addEventListener("click", () => {
     addDigit("2");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 threeBtn.addEventListener("click", () => {
     addDigit("3");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 fourBtn.addEventListener("click", () => {
     addDigit("4");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 fiveBtn.addEventListener("click", () => {
     addDigit("5");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 sixBtn.addEventListener("click", () => {
     addDigit("6");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 sevenBtn.addEventListener("click", () => {
     addDigit("7");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 eightBtn.addEventListener("click", () => {
     addDigit("8");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 nineBtn.addEventListener("click", () => {
     addDigit("9");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 zeroBtn.addEventListener("click", () => {
     addDigit("0");
-    displayCurrentNumber();
+    updateDisplay(currentNumber);
 });
 
 
