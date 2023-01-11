@@ -187,6 +187,6 @@ equalsBtn.addEventListener("click", () => {
     if (currentNumber && currentOperation) {
         updateSolution();
         updateDisplay();
-        currentOperation = null;
+        resetCurrentOperation();
     }
 });
