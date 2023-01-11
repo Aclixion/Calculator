@@ -59,7 +59,7 @@ function operate(numberOne, numberTwo, operation) {
     }
 }
 
-// Display solution on answer display
+// Updates solution
 function updateSolution() {
     if (solution === null) {
         solution = Number(currentNumber);
