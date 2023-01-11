@@ -59,6 +59,20 @@ function operate(numberOne, numberTwo, operation) {
     }
 }
 
+// Display solution on answer display
+function updateSolution() {
+    if (solution === null) {
+        solution = Number(currentNumber);
+    } else {
+        let result = operate(Number(solution), Number(currentNumber), currentOperation);
+        if (isNaN(result)) {
+            alert("CANNOT DIVIDE BY ZERO");
+        } else {
+            solution = result;
+        }
+    }
+}
+
 // Displays a number on the answer display
 function updateDisplay(number) {
     answerDisplay.textContent = number;
