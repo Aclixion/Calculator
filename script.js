@@ -41,6 +41,16 @@ function resetCurrentNumber() {
     currentNumber = "";
 }
 
+// Clears solution;
+function resetSolution() {
+    solution = null;
+}
+
+// Clears current operation
+function resetCurrentOperation() {
+    currentOperation = null;
+}
+
 // Performs an arithmetic operation on two numbers
 function operate(numberOne, numberTwo, operation) {
     switch (operation) {
@@ -176,7 +186,7 @@ clearBtn.addEventListener("click", () => {
 equalsBtn.addEventListener("click", () => {
     if (currentNumber && currentOperation) {
         updateSolution();
-        currentNumber = "";
+        updateDisplay();
         currentOperation = null;
     }
 });
