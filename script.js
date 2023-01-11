@@ -59,38 +59,9 @@ function operate(numberOne, numberTwo, operation) {
     }
 }
 
-// Displays current number on answer display
-function displayCurrentNumber() {
-    answerDisplay.textContent = currentNumber;
-}
-
-// Display solution on answer display
-function displaySolution() {
-    if (solution === null) {
-        solution = Number(currentNumber);
-    } else {
-        let result = operate(Number(solution), Number(currentNumber), currentOperation);
-        if (isNaN(result)) {
-            alert("CANNOT DIVIDE BY ZERO");
-        } else {
-            solution = result;
-            answerDisplay.textContent = solution;
-        }
-    }
-}
-
-// Updates answer display
-function updateAnswerDisplay() {
-    if (solution === null) {
-        answerDisplay.textContent = currentNumber;
-    } else {
-        let result = operate(Number(solution, Number(currentNumber), currentOperation));
-        if (isNaN(result)) {
-            alert("CANNOT DIVIDE BY ZERO");
-        } else {
-            answerDisplay.textContent = result;
-        }
-    }
+// Displays a number on the answer display
+function updateDisplay(number) {
+    answerDisplay.textContent = number;
 }
 
 oneBtn.addEventListener("click", () => {
