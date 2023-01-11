@@ -186,7 +186,7 @@ clearBtn.addEventListener("click", () => {
 equalsBtn.addEventListener("click", () => {
     if (currentNumber && currentOperation) {
         updateSolution();
-        updateDisplay();
+        updateDisplay(solution);
         resetCurrentOperation();
     }
 });
