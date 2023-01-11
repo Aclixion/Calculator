@@ -188,5 +188,6 @@ equalsBtn.addEventListener("click", () => {
         updateSolution();
         updateDisplay(solution);
         resetCurrentOperation();
+        resetCurrentNumber();
     }
 });
