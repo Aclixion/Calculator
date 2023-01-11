@@ -177,10 +177,10 @@ divideBtn.addEventListener("click", () => {
 });
 
 clearBtn.addEventListener("click", () => {
-    currentNumber = "";
-    solution = null;
-    currentOperation = null;
-    answerDisplay.textContent = "0";
+    resetCurrentNumber();
+    resetSolution();
+    resetCurrentOperation();
+    updateDisplay("0");
 });
 
 equalsBtn.addEventListener("click", () => {
